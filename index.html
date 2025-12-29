@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LORD'S BESPOKE TAILOR SYSTEM</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              gold: {
+                50: '#FBF7E6',
+                100: '#F5EBC4',
+                200: '#EBD480',
+                300: '#E0BD3D',
+                400: '#D4A000', // Primary
+                500: '#B8860B', // Darker Gold
+                600: '#916A08',
+                700: '#6B4E06',
+                800: '#453204',
+                900: '#1F1602',
+              },
+              black: {
+                DEFAULT: '#000000',
+                rich: '#050505',
+                card: '#0f0f0f',
+                input: '#141414',
+                glass: 'rgba(5, 5, 5, 0.7)'
+              }
+            },
+            fontFamily: {
+              serif: ['Cinzel', 'serif'],
+              sans: ['Lato', 'sans-serif'],
+            },
+            backgroundImage: {
+              'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+              'gold-gradient': 'linear-gradient(135deg, #F5EBC4 0%, #D4A000 50%, #916A08 100%)',
+              'card-gradient': 'linear-gradient(145deg, #121212 0%, #000000 100%)',
+            },
+            boxShadow: {
+              'glow': '0 0 20px rgba(212, 160, 0, 0.15)',
+              '3d': '0 10px 30px -10px rgba(0, 0, 0, 0.8)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #000000;
+        background-image: radial-gradient(circle at 50% 0%, #1a1500 0%, #000000 60%);
+        color: #e5e5e5;
+        min-height: 100vh;
+      }
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #050505;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: linear-gradient(to bottom, #453204, #916A08);
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #D4A000;
+      }
+      
+      .glass-panel {
+        background: rgba(10, 10, 10, 0.6);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(212, 160, 0, 0.1);
+      }
+      
+      .card-3d {
+        background: linear-gradient(145deg, #121212, #050505);
+        box-shadow: 5px 5px 15px #000000, -1px -1px 5px rgba(255,255,255,0.03);
+      }
+      
+      .text-glow {
+        text-shadow: 0 0 10px rgba(212, 160, 0, 0.3);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "recharts": "https://aistudiocdn.com/recharts@^3.5.1",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.31.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
